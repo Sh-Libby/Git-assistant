@@ -208,6 +208,15 @@ tracked (отслеживаемый) -- "Изменения" -->modified (изм
 5. Снова добавили в staging area с помощью `git add`. Состояния: `staged` (+ `tracked`).
 6. Сделали коммит. Состояния: `tracked`.
 7. Повторили пункты 4−7 много-много раз.
-    
-    4−7
+
+
+Проверка
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера:
+  A --> B;
+```
 
