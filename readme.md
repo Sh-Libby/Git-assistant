@@ -194,7 +194,7 @@ graph LR;
 untracked (неотслеживаемый) -- "git add" --> staged (в списке на коммит) + tracked;
 modified (измененый) -- "git add" --> staged (в списке на коммит) + tracked;
 staged (в списке на коммит) + tracked -- "git commit" --> tracked (отслеживаемый);
-tracked (отслеживаемый) -- "Изменения" -->modified (измененый)
+tracked (отслеживаемый) -- "Изменения" -->modified (измененый);
 
 ```
 
@@ -209,14 +209,4 @@ tracked (отслеживаемый) -- "Изменения" -->modified (изм
 6. Сделали коммит. Состояния: `tracked`.
 7. Повторили пункты 4−7 много-много раз.
 
-
-Проверка
-```mermaid
-graph LR;
-  untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
-
-%% стрелка без текста для примера:
-  A --> B;
-```
 
